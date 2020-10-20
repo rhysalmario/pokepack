@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Pokemon Font';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Pokemon Font'), url('./Pokemon Solid.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.appName {
+  margin: 0.5em 0 0.2em 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 2.5em;
+  font-family: 'Pokemon Font';
+  font-weight: 200;
+  color: #5739ed;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+html, body, #root, .App {
+  height: 100%;
+}
+
+.body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.wrapper {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
 }
 
-.App-link {
-  color: #61dafb;
+.pack-container{
+  max-height: 60%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardList {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  right: 0;
+  background-color: #e6f2ff; 
+  overflow-x: hidden; 
+  padding-top: 0; 
+  transition: 0.5s; 
 }
+
+.closeButton {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  margin-left: 50px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+  color: grey;
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+

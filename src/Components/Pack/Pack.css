@@ -1,0 +1,28 @@
+
+.packWrapper {
+  max-width: 20%;  
+  height: auto;
+  transition: transform 500ms;
+  border-radius: 1em;
+  background: lightgrey;
+  padding: 0.5%;
+}
+
+.packWrapper:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.sealedContainer, .openedContainer {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.25%;
+}
+
+.pulledCards {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
