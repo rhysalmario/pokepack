@@ -13,7 +13,10 @@ List of future improvements:
 - Add "Flip All" Button and restrict new pack until all current cards are flipped
 - Add flipping animation
 - Create a true backend 
+<<<<<<< HEAD
 
 Ver 1.0.1
 
 Updated links to new pack images.
+=======
+>>>>>>> Add files via upload
