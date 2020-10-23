@@ -10,6 +10,7 @@ checking out my project and I hope it is entertaining for you!
 
 List of future improvements:
 - Optimize for mobile 
+- Add visual affects for rare cards
 - Add "Flip All" Button and restrict new pack until all current cards are flipped
 - Add flipping animation
 - Create a true backend 
