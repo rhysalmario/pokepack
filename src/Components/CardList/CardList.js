@@ -1,23 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { useState } from 'react';
 import './CardList.css';
 
-class CardList extends Component {
-  constructor() {
-    super();
-    this.state = {
-      showRarity : ''
-    }
-  }
+const CardList = (props) => {
+  const [showRarity, setShowRarity] = useState('');
 
   // When a different rarity is selected, the current rarity is updated in the state
-  onRarityChange = (event) => {
-    this.setState({
-      showRarity : event.target.value
-    });
+  const onRarityChange = (event) => {
+    setShowRarity(event.target.value);
   }
 
   // CardList is passed the rarities as props from the App's state and creates a list of the specific rarity by using the map function
-  displayCards = (list) => {
+  const displayCards = (list) => {
     return (
       <ul className='unorderedList'>
         { list.map(card => 
@@ -30,26 +24,23 @@ class CardList extends Component {
 
   // CardList is comprised of a select element and an ul with the designated rarity
   // The ul is updated when the select is changed, and nested ternary operators check which rarity to display
-  render() {
-    const { showRarity } = this.state;
-    return(
-      <div className='CardList-container'>
-        <h3>Set List</h3>
-        <select name='Rarity' onChange={this.onRarityChange}>
-          <option value='none' defaultValue hidden>By rarity...</option>
-          <option value='Common'>Common</option>
-          <option value='Uncommon'>Uncommon</option>
-          <option value='Rare'>Rare</option>
-        </select>
-      
-        { showRarity === 'Common' ?
-        this.displayCards(this.props.commons) : showRarity === 'Uncommon' ?
-          this.displayCards(this.props.uncommons) : showRarity === 'Rare' ?
-          this.displayCards(this.props.rares) : <p>Select a rarity from the dropdown to view the available cards of that rarity.</p>
-        }
-      </div>
-    );
-  }
+  return(
+    <div className='CardList-container'>
+      <h3>Set List</h3>
+      <select name='Rarity' onChange={onRarityChange}>
+        <option value='none' defaultValue hidden>By rarity...</option>
+        <option value='Common'>Common</option>
+        <option value='Uncommon'>Uncommon</option>
+        <option value='Rare'>Rare</option>
+      </select>
+    
+      { showRarity === 'Common' ?
+      displayCards(props.commons) : showRarity === 'Uncommon' ?
+        displayCards(props.uncommons) : showRarity === 'Rare' ?
+        displayCards(props.rares) : <p>Select a rarity from the dropdown to view the available cards of that rarity.</p>
+      }
+    </div>
+  );
 }
 
 export default CardList;
