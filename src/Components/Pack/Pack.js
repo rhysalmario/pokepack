@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { packImages } from '../../packImages';
 import Card from '../Card/Card';
 import './Pack.css'
@@ -7,6 +8,9 @@ import Button from 'react-bootstrap/Button';
 
 const Pack = (props) => {
   const [isSealed, setIsSealed] = useState(true);
+  const commons = useSelector(state => state.commons);
+  const uncommons = useSelector(state => state.uncommons);
+  const rares = useSelector(state => state.rares);
 
   // Random function used to generate random numbers for other functions
   const getRandom = (range) => {
@@ -31,7 +35,6 @@ const Pack = (props) => {
   // and implement a flip all button
 
 
-  const { commons, uncommons, rares } = props;
   return(
     <div>
       { (isSealed) ? 

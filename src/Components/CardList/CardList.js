@@ -1,9 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import './CardList.css';
 
 const CardList = (props) => {
   const [showRarity, setShowRarity] = useState('');
+  const commons = useSelector(state => state.commons);
+  const uncommons = useSelector(state => state.uncommons);
+  const rares = useSelector(state => state.rares);
 
   // When a different rarity is selected, the current rarity is updated in the state
   const onRarityChange = (event) => {
@@ -35,9 +39,9 @@ const CardList = (props) => {
       </select>
     
       { showRarity === 'Common' ?
-      displayCards(props.commons) : showRarity === 'Uncommon' ?
-        displayCards(props.uncommons) : showRarity === 'Rare' ?
-        displayCards(props.rares) : <p>Select a rarity from the dropdown to view the available cards of that rarity.</p>
+      displayCards(commons) : showRarity === 'Uncommon' ?
+        displayCards(uncommons) : showRarity === 'Rare' ?
+        displayCards(rares) : <p>Select a rarity from the dropdown to view the available cards of that rarity.</p>
       }
     </div>
   );
