@@ -13,6 +13,10 @@
 @media screen and (max-width: 1080px){
   .card {
     max-width: 80%;
-    height: 100%;
+    height: auto;
+  }
+  
+  .card:hover {
+    transform: none;
   }
 }
