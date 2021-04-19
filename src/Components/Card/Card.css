@@ -2,7 +2,7 @@
   transition: transform 500ms;
   margin: 5px;
   max-width: 11%;
-  height: auto;
+  height: 100%;
 }
 
 .card:hover {

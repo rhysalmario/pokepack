@@ -13,9 +13,9 @@ const Card = (props) => {
   const {rarity, cardNumber} = props;
   return(
     isFlipped ?
-      <img className='card' alt={rarity[cardNumber].name} src={rarity[cardNumber].imageUrl}/>
+      <img className='card' alt={rarity[cardNumber].name} src={rarity[cardNumber].imageUrl} width='534' height='748'/>
     :
-      <img className='card' onClick={flipCard} alt='Pokemon Cardback' src='https://upload.wikimedia.org/wikipedia/en/3/3b/Pokemon_Trading_Card_Game_cardback.jpg'/>
+      <img className='card' onClick={flipCard} alt='Pokemon Cardback' src='https://upload.wikimedia.org/wikipedia/en/3/3b/Pokemon_Trading_Card_Game_cardback.jpg' width='534' height='748'/>
   );
 }
 

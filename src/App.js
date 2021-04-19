@@ -19,10 +19,10 @@ const App = () => {
   let toggleCardList = () => {
     viewCardList = (!viewCardList);
     if(viewCardList) {
-      document.getElementById('sidebar').style.width = '0';
+      document.getElementById('sidebar').style.width = '20%';
     }
     else{
-      document.getElementById('sidebar').style.width = '20%';
+      document.getElementById('sidebar').style.width = '0';
     }
   }
 
