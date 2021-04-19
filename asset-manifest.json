@@ -1,26 +1,24 @@
 {
   "files": {
-    "main.css": "/pokepack/static/css/main.fb705401.chunk.css",
-    "main.js": "/pokepack/static/js/main.dee343d4.chunk.js",
-    "main.js.map": "/pokepack/static/js/main.dee343d4.chunk.js.map",
-    "runtime-main.js": "/pokepack/static/js/runtime-main.a58e651f.js",
-    "runtime-main.js.map": "/pokepack/static/js/runtime-main.a58e651f.js.map",
-    "static/css/2.2a86faee.chunk.css": "/pokepack/static/css/2.2a86faee.chunk.css",
-    "static/js/2.b0a116c9.chunk.js": "/pokepack/static/js/2.b0a116c9.chunk.js",
-    "static/js/2.b0a116c9.chunk.js.map": "/pokepack/static/js/2.b0a116c9.chunk.js.map",
+    "main.css": "/pokepack/static/css/main.e3b3dee7.chunk.css",
+    "main.js": "/pokepack/static/js/main.6db16d1f.chunk.js",
+    "main.js.map": "/pokepack/static/js/main.6db16d1f.chunk.js.map",
+    "runtime-main.js": "/pokepack/static/js/runtime-main.8d96955a.js",
+    "runtime-main.js.map": "/pokepack/static/js/runtime-main.8d96955a.js.map",
+    "static/css/2.92200efa.chunk.css": "/pokepack/static/css/2.92200efa.chunk.css",
+    "static/js/2.6de20609.chunk.js": "/pokepack/static/js/2.6de20609.chunk.js",
+    "static/js/2.6de20609.chunk.js.map": "/pokepack/static/js/2.6de20609.chunk.js.map",
     "index.html": "/pokepack/index.html",
-    "precache-manifest.54870c2e49363960d8b612fdc4d287e6.js": "/pokepack/precache-manifest.54870c2e49363960d8b612fdc4d287e6.js",
-    "service-worker.js": "/pokepack/service-worker.js",
-    "static/css/2.2a86faee.chunk.css.map": "/pokepack/static/css/2.2a86faee.chunk.css.map",
-    "static/css/main.fb705401.chunk.css.map": "/pokepack/static/css/main.fb705401.chunk.css.map",
-    "static/js/2.b0a116c9.chunk.js.LICENSE.txt": "/pokepack/static/js/2.b0a116c9.chunk.js.LICENSE.txt",
-    "static/media/CardList.css": "/pokepack/static/media/Pokemon Solid.36d26dbc.ttf"
+    "static/css/2.92200efa.chunk.css.map": "/pokepack/static/css/2.92200efa.chunk.css.map",
+    "static/css/main.e3b3dee7.chunk.css.map": "/pokepack/static/css/main.e3b3dee7.chunk.css.map",
+    "static/js/2.6de20609.chunk.js.LICENSE.txt": "/pokepack/static/js/2.6de20609.chunk.js.LICENSE.txt",
+    "static/media/CardList.css": "/pokepack/static/media/Pokemon Solid.5d60be1f.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.a58e651f.js",
-    "static/css/2.2a86faee.chunk.css",
-    "static/js/2.b0a116c9.chunk.js",
-    "static/css/main.fb705401.chunk.css",
-    "static/js/main.dee343d4.chunk.js"
+    "static/js/runtime-main.8d96955a.js",
+    "static/css/2.92200efa.chunk.css",
+    "static/js/2.6de20609.chunk.js",
+    "static/css/main.e3b3dee7.chunk.css",
+    "static/js/main.6db16d1f.chunk.js"
   ]
 }
