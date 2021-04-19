@@ -14,10 +14,15 @@ List of future improvements:
 - Add "Flip All" Button and restrict new pack until all current cards are flipped
 - Add flipping animation
 - Create a true backend 
-<<<<<<< HEAD
+=======
 
 Ver 1.0.1
 
 Updated links to new pack images.
 =======
->>>>>>> Add files via upload
+
+Ver 2.0.0
+- Refactored to use functional components with hooks instead of utilizing state through class components
+- Optimized for mobile use
+- Fixed bug where cards would resize once they were flipped
+
