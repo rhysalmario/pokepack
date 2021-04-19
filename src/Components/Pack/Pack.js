@@ -36,7 +36,7 @@ const Pack = (props) => {
 
 
   return(
-    <div>
+    <div className='packDiv'>
       { (isSealed) ? 
       <div className='sealedContainer'>
         <img className='packWrapper pointer' 

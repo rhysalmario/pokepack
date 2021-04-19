@@ -1,4 +1,6 @@
-
+.packDiv {
+  height: auto;
+}
 .packWrapper {
   max-width: 20%;  
   height: auto;
@@ -15,7 +17,7 @@
 
 .sealedContainer, .openedContainer {
   width: 100%;
-  height: auto;
+  height: 100%;
   margin-bottom: 0.25%;
 }
 
@@ -23,6 +25,37 @@
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media screen and (max-width: 1080px){
+  .packDiv {
+    height: 75%;
+    margin-bottom: 7%;
+  }
+  
+  .packWrapper {
+    max-width: 80%;
+  }
+
+  .pulledCards {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .pulledCards::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .pulledCards {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 }
 
 

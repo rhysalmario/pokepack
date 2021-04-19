@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
 import poketcg from 'pokemontcgsdk';
@@ -15,13 +15,15 @@ const App = () => {
     return cards.sort((a,b) => a.number - b.number);
   }
 
-  // vanilla JS functions to control the sidebar
-  const openSidebar = () => {
-    document.getElementById('sidebar').style.width = '20%';
-  }
-
-  const closeSidebar = () => {
-    document.getElementById('sidebar').style.width = '0';
+  let viewCardList = false;
+  let toggleCardList = () => {
+    viewCardList = (!viewCardList);
+    if(viewCardList) {
+      document.getElementById('sidebar').style.width = '0';
+    }
+    else{
+      document.getElementById('sidebar').style.width = '20%';
+    }
   }
 
   // Fetching the cards by rarity from the pokemon tcg api when the app is mounted
@@ -48,7 +50,7 @@ const App = () => {
         dispatch(initRares(sortedRares));
       })
 
-  }, []);
+  }, [dispatch]);
 
   const commons = useSelector(state => state.commons);
   const uncommons = useSelector(state => state.uncommons);
@@ -61,11 +63,10 @@ const App = () => {
         <h1 className='appName'>PokéPack</h1>
         <p>A Pokémon TCG Pack Opening Simulator</p>
       </div >
-      <Pack />
-      <Button variant='primary' size= 'sm' onClick={openSidebar}>Set List</Button> {' '}
+      <Pack /> 
+      <Button variant='primary' size= 'sm' onClick={toggleCardList}>Set List</Button> {' '}
       <div id='sidebar' className='cardList'>
         <CardList commons={ commons } uncommons={ uncommons } rares={ rares }/>
-        <Button variant='outline-primary' size ='sm' className='closeButton' onClick={closeSidebar}>Close</Button>
       </div>
       <h6 className='footer'>Made by <a href='https://github.com/rhysalmario'>Rhys Almario</a></h6>
     </div>

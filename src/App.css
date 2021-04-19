@@ -33,10 +33,6 @@ html, body, #root, .App {
   position: fixed;
 }
 
-.pack-container{
-  max-height: 60%;
-}
-
 .cardList {
   height: 100%; 
   width: 0; 
@@ -72,6 +68,3 @@ html, body, #root, .App {
   left: 0;
   z-index: -1;
 }
-
-
-

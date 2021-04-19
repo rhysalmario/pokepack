@@ -2,9 +2,17 @@
   transition: transform 500ms;
   margin: 5px;
   max-width: 11%;
+  height: auto;
 }
 
 .card:hover {
-  transform: scale(1.20);
+  transform: scale(1.10);
   cursor: pointer;
+}
+
+@media screen and (max-width: 1080px){
+  .card {
+    max-width: 80%;
+    height: 100%;
+  }
 }
