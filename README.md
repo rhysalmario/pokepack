@@ -18,7 +18,7 @@ List of future improvements:
 
 Ver 1.0.1
 
-Updated links to new pack images.
+- Updated links to pack images
 =======
 
 Ver 2.0.0
