@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pokepack/static/css/main.893af244.chunk.css",
+    "main.css": "/pokepack/static/css/main.4c9bf7eb.chunk.css",
     "main.js": "/pokepack/static/js/main.ae2e4b0d.chunk.js",
     "main.js.map": "/pokepack/static/js/main.ae2e4b0d.chunk.js.map",
     "runtime-main.js": "/pokepack/static/js/runtime-main.8d96955a.js",
@@ -10,7 +10,7 @@
     "static/js/2.6de20609.chunk.js.map": "/pokepack/static/js/2.6de20609.chunk.js.map",
     "index.html": "/pokepack/index.html",
     "static/css/2.92200efa.chunk.css.map": "/pokepack/static/css/2.92200efa.chunk.css.map",
-    "static/css/main.893af244.chunk.css.map": "/pokepack/static/css/main.893af244.chunk.css.map",
+    "static/css/main.4c9bf7eb.chunk.css.map": "/pokepack/static/css/main.4c9bf7eb.chunk.css.map",
     "static/js/2.6de20609.chunk.js.LICENSE.txt": "/pokepack/static/js/2.6de20609.chunk.js.LICENSE.txt",
     "static/media/CardList.css": "/pokepack/static/media/Pokemon Solid.5d60be1f.ttf"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.8d96955a.js",
     "static/css/2.92200efa.chunk.css",
     "static/js/2.6de20609.chunk.js",
-    "static/css/main.893af244.chunk.css",
+    "static/css/main.4c9bf7eb.chunk.css",
     "static/js/main.ae2e4b0d.chunk.js"
   ]
 }
